@@ -59,4 +59,13 @@ let b = 3
 // console.log(true && 'hamid') // this is true because this is truthy
 // console.log(false && 8) // this is false 
 // console.log(false || 'hamid') // this is truthy due to OR result will be 
-console.log(false || 8 || 21)
+// console.log(false || 8 || 21);
+
+//Bitwise Operator
+// all bitwise operate on binary level and outputs will be on binary based 
+// console.log(2&5); // and operator will check on binary level
+// console.log(2|5);
+// console.log(2^5);
+// console.log(~(2)); 
+// console.log(10>>1);
+// console.log(5<<1);
