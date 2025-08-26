@@ -9,4 +9,12 @@
 // const a = 234;
 // // const a = 33;  // redecleration is not 
 // a = 43;   // reassignment is not allowed
-console.log(a);
+// Arithmetic operator
+let a = 5;
+let b = 3
+// console.log(a+b);
+// console.log(a-b);
+// console.log(a*b);
+// console.log(a/b);
+// console.log(a%b);
+// console.log(a**b);
