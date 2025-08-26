@@ -18,3 +18,23 @@ let b = 3
 // console.log(a/b);
 // console.log(a%b);
 // console.log(a**b);
+// assignment operator
+// a = a+5;
+// a +=5;
+// a = a-5;
+// a -=5;
+// a *= 5
+// a /= 5;
+// Comparison Opreator 
+// console.log(10<5);
+// console.log(10>5);
+// console.log(10<=5);
+// console.log(10>=5);
+// console.log("5"==5);
+// console.log(5==5);
+// console.log("5"===5);
+// console.log(5===5);
+// console.log('5'!==5);
+// console.log(5!==5);
+// console.log(5!=5);
+// console.log('10'!=5);
