@@ -69,3 +69,81 @@ let b = 3
 // console.log(~(2)); 
 // console.log(10>>1);
 // console.log(5<<1);
+// console.log(5<<4);
+
+// Conditional Operator
+// if else
+
+// let age = 9;
+// if(age>18){
+//     console.log("You can vote")
+// }
+// else{
+//     console.log("Cannot Vote")
+// }
+
+// multiple ifelse
+// let number = 8;
+
+// if(number == 1){
+//     console.log("A")
+// }
+// else if(number == 2){
+//     console.log("B")
+// }
+// else if(number == 3){
+//     console.log("C")
+// }
+// else if(number == 4){
+//     console.log("D")
+// }
+// else if(number == 5){
+//     console.log("E")
+// }
+// else{
+//     console.log("F")
+// }
+
+//Nested ifelse
+
+// let number = 4
+// let age = 23;
+// if(number == 1){
+//     console.log("A")
+// }
+// else if(number == 2){
+//     console.log("B")
+// }
+// else if(number == 3){
+//     console.log("C")
+// }
+// else if(number == 4){
+//     if(age>18){
+//         console.log("You can vote")
+//     }
+//     console.log("D")
+// }
+// else if(number == 5){
+//     console.log("E")
+// }
+// else{
+//     console.log("F")
+// }
+
+//switch statment
+
+let num = 4;
+switch(num){
+    case 1: console.log("A");
+    break;
+    case 2: console.log("B");
+    break;
+    case 3: console.log("C");
+    break;
+    case 4: console.log("D");
+    break;
+    case 5: console.log("E");
+    break;
+    default: console.log("all is Well")
+}
+
