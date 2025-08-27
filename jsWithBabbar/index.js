@@ -200,10 +200,27 @@ let b = 3
 // }while(k<6)
 
 // different style of writing string in javastrings 
-let fName = "Hamid"
-let lName = 'Latif'
-let strPara = `Hi my name is ${fName}`
+// let fName = "Hamid"
+// let lName = 'Latif'
+// let strPara = `Hi my name is ${fName}`
 
-console.log(fName)
-console.log(lName)
-console.log(strPara)
+// console.log(fName)
+// console.log(lName)
+// console.log(strPara)
+
+// Concatination
+
+let opt1 = "Hamid "
+let opt2 = "Latif"
+// console.log(opt1 + opt2)
+// console.log(`${opt1} ${opt2}`) 
+// console.log(opt2.length)
+// console.log(opt1.toUpperCase())
+// console.log(opt2.toLowerCase())
+
+// console.log(opt1.substring(1, 3))
+// console.log("This is another \"way\" to write string")
+
+let newstr = "this is new way of string";
+let text = newstr.join(',')
+console.log(text);
