@@ -132,18 +132,62 @@ let b = 3
 
 //switch statment
 
-let num = 4;
-switch(num){
-    case 1: console.log("A");
-    break;
-    case 2: console.log("B");
-    break;
-    case 3: console.log("C");
-    break;
-    case 4: console.log("D");
-    break;
-    case 5: console.log("E");
-    break;
-    default: console.log("all is Well")
-}
+// let num = 4;
+// switch(num){
+//     case 1: console.log("A");
+//     break;
+//     case 2: console.log("B");
+//     break;
+//     case 3: console.log("C");
+//     break;
+//     case 4: console.log("D");
+//     break;
+//     case 5: console.log("E");
+//     break;
+//     default: console.log("all is Well")
+// }
 
+//For loop
+// for(let i=1; i<10; i++){
+//     console.log("Number",i);
+// }
+
+// reverse counting
+// for(let i=10; i>0; i--){
+//     console.log(i)
+// }
+
+// break keyword 
+// for(let i=10; i>0; i--){
+//     if(i==4){
+//         break;
+//     }
+//     else{
+//         console.log(i);
+//     }
+
+// }
+
+//Continue keyword
+// for(let i=10; i>0; i--){
+//     if(i==4){
+//         continue;
+//     }
+//     else{
+//         console.log(i);
+//     }
+
+// }
+
+//while loop
+let i = 1;
+while(i<6){
+    console.log(i)
+    i++;
+}
+//do while loop
+let k = 1;
+do{
+    console.log(k)
+    k++;
+}while(k<6)
