@@ -179,15 +179,31 @@ let b = 3
 
 // }
 
-//while loop
-let i = 1;
-while(i<6){
-    console.log(i)
-    i++;
-}
+//while  loop with inifitine practice
+// let i = 1;
+// while(i<6){
+//     if(i==4){
+//         console.log("hi")
+//         i++;
+//         continue;
+//     }
+//     else{
+//         console.log(i)
+//     }
+//     i++;
+// }
 //do while loop
-let k = 1;
-do{
-    console.log(k)
-    k++;
-}while(k<6)
+// let k = 1;
+// do{
+//     console.log(k)
+//     k++;
+// }while(k<6)
+
+// different style of writing string in javastrings 
+let fName = "Hamid"
+let lName = 'Latif'
+let strPara = `Hi my name is ${fName}`
+
+console.log(fName)
+console.log(lName)
+console.log(strPara)
