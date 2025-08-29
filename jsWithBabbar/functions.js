@@ -75,24 +75,24 @@
 
 // All three ways to write function
 //normal function
-function getSum(a, b){
-    return a + b;
-}
-let ans1 = getSum(3,4)
-console.log(ans1)
+// function getSum(a, b){
+//     return a + b;
+// }
+// let ans1 = getSum(3,4)
+// console.log(ans1)
 
-// function expression
+// // function expression
 
-const getMultiply = function (a, b){
-    return a * b;
-}
-let ans2 = getMultiply(3,4)
-console.log(ans2)
+// const getMultiply = function (a, b){
+//     return a * b;
+// }
+// let ans2 = getMultiply(3,4)
+// console.log(ans2)
 
-// Arrow function
+// // Arrow function
 
-const getdivision = (a, b)=>{
-    return a / b;
-}
-let ans3 = getdivision(12,4)
-console.log(ans3)
+// const getdivision = (a, b)=>{
+//     return a / b;
+// }
+// let ans3 = getdivision(12,4)
+// console.log(ans3)
