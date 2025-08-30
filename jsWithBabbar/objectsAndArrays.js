@@ -51,14 +51,65 @@
 // console.log(ans)
 
 // filter method 
-let myArr = [23, 43, 54, 65, 76]
+// let myArr = [23, 43, 54, 65, 76]
 
-let ans = myArr.filter((num)=>{
-    if(num%2===0){
-        return true
-    }
-    else{
-        return false
-    }
-})
-console.log(ans)
+// let ans = myArr.filter((num)=>{
+//     if(num%2===0){
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+// })
+// console.log(ans)
+//short code using filter
+// let myArr = [23, 43, "Hamid", 65, "Rana"]
+
+// let ans = myArr.filter((value)=>{
+//     return typeof value === 'string'
+// })
+// console.log(ans)
+
+// reduce function
+
+// let arr = [10, 20, 30, 40]
+
+// let ans = arr.reduce((acc, curr)=>{
+//     return acc + curr;
+// },0);
+
+// console.log(ans)
+
+// sort method
+//ascending order
+// let arr = [21, 83, 44, 15, 36 ]
+// arr.sort()
+// console.log(arr)
+// reverse of ascending order
+
+// let arr = [21, 83, 44, 15, 36 ]
+// arr.reverse()
+// console.log(arr)
+
+// descending order with sort() method
+
+// let arr = [21, 83, 44, 15, 36 ]
+
+// arr.sort((a,b)=> b-a)
+// console.log(arr)
+
+//descending with sort and reverse method
+// let arr = [21, 83, 44, 15, 36 ]
+// arr.sort()
+// arr.reverse()
+// console.log(arr)
+
+// // index of 
+// let arr = [21, 83, 44, 15, 36 ]
+
+// console.log(arr.indexOf(44))
+
+//find()
+let arr = [21, 61, 83, 44, 15, 36 ]
+
+console.log(arr.find((number)=> number>35));
