@@ -25,7 +25,7 @@
 // console.log(arr);
 // console.log(arr[2]) // how to check value using index
 
-let myArr = [23, 34, 65, 76]
+// let myArr = [23, 34, 65, 76]
 // myArr.push(34)
 // myArr.pop()
 // myArr.shift()
@@ -38,5 +38,27 @@ let myArr = [23, 34, 65, 76]
 // console.log(myArr.slice(2,5))
 
 // myArr.splice(2, 1, "Hamid")
-console.log(myArr)
 
+// map method of javascript
+
+// let myArr = [10, 20, 30, 45]
+// let ans = myArr.map((num, )=>{
+//     // return num*num;
+//     // console.log(num +2)
+//     // console.log(index)
+//     // console.log(num)
+// })
+// console.log(ans)
+
+// filter method 
+let myArr = [23, 43, 54, 65, 76]
+
+let ans = myArr.filter((num)=>{
+    if(num%2===0){
+        return true
+    }
+    else{
+        return false
+    }
+})
+console.log(ans)
