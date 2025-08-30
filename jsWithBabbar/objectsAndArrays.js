@@ -24,3 +24,11 @@ console.log(typeof(brr));
 const arr = new Array("Hamid", 85, true, 70.5);
 console.log(arr);
 console.log(arr[2]) // how to check value using index
+
+let myArr = [23, 34, 65, 76]
+// myArr.push(34)
+// myArr.pop()
+// myArr.shift()
+myArr.unshift(45)
+
+console.log(myArr)
