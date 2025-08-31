@@ -126,6 +126,7 @@
 //     console.log("Value: " ,value, " index: ",index)    
 // });
 
+// for..in method 
 
 // let obj = {
 //     myName: "Hamid Rana",
@@ -137,3 +138,49 @@
 // for(let key in obj){
 //     console.log(key, obj[key]);
 // }
+
+//for..of method
+//for..of with array
+// let arr = [24, 35, 82, 19, 72]
+// for(let value of arr){
+//     console.log(value)
+// }
+// let arr = "Hamid Rana"
+// for(let value of arr){
+//     console.log(value)
+// }
+
+// Arrays with Functions
+
+let arr = [10, 20, 30, 40, 50]
+
+// let getSum = function(arr){
+//     let sum = 0;
+//     for(let i=0; i<arr.length; i++){
+//         sum += arr[i];
+//     }
+//     return sum;
+// }
+// console.log(getSum(arr))
+
+// array with arrow function
+
+// let getSum = (arr)=>{
+//     let sum = 0;
+//     for(let i=0; i<arr.length; i++){
+//         sum += arr[i]
+//     } return sum;
+// }
+
+// console.log(getSum(arr))
+
+// array with arrow functions using forEach method
+let getSum = (arr)=>{
+    let sum = 0;
+    arr.forEach(value => {
+        sum += value;
+    });
+    return sum;
+}
+
+console.log(getSum(arr))
