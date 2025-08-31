@@ -110,6 +110,30 @@
 // console.log(arr.indexOf(44))
 
 //find()
-let arr = [21, 61, 83, 44, 15, 36 ]
+// let arr = [21, 61, 83, 44, 15, 36 ]
 
-console.log(arr.find((number)=> number>35));
+// console.log(arr.find((number)=> number>35));
+
+// ForEach loop
+// let arr = [21, 35, 18, 64, 72]
+
+// // console.log(arr.length)
+// for(let index=0; index<arr.length; index++){
+//     console.log("Index:",index + "  value:",arr[index])
+// }
+
+// arr.forEach((value, index) => {
+//     console.log("Value: " ,value, " index: ",index)    
+// });
+
+
+// let obj = {
+//     myName: "Hamid Rana",
+//     age: 27,
+//     from: "Sheikhupura",
+//     greet: ()=> console.log("Assalam o alaikum")
+// }
+
+// for(let key in obj){
+//     console.log(key, obj[key]);
+// }
