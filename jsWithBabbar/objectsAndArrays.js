@@ -175,12 +175,13 @@ let arr = [10, 20, 30, 40, 50]
 // console.log(getSum(arr))
 
 // array with arrow functions using forEach method
-let getSum = (arr)=>{
-    let sum = 0;
-    arr.forEach(value => {
-        sum += value;
-    });
-    return sum;
-}
+// function getSum(arr){
+//     let sum = 0;
+//     arr.forEach(value => {
+//         sum += value;
+//     });
+//     return sum;
+// }
 
-console.log(getSum(arr))
+// console.log(getSum(arr))
+
