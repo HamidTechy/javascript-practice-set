@@ -9,3 +9,9 @@
 // var fatherName = (pName)=>{
 //     console.log(pName)
 // }
+
+// variable hoisting
+
+console.log(age)
+var age = 26;
+
