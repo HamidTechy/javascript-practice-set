@@ -85,3 +85,33 @@
 // let ans = person("Hamid")
 
 // console.log(ans(27))
+
+// function in data structue like array
+
+// let arr = [
+//     function(a,b){
+//         return a+b;
+//     },
+//     function(a,b){
+//         return a-b;
+//     },
+//     function(a,b){
+//         return a*b;
+//     }
+// ]
+
+// let ans = arr[2]
+// console.log(ans(5,8))
+
+// functions with object 
+
+// let obj = {
+//     name: "Hamid",
+//     age: 26,
+//     greet : function(){
+//         console.log("Assalam o alaikum")
+//     }
+// }
+
+// console.log(obj.age)
+// obj.greet();
