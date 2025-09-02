@@ -47,7 +47,27 @@
 // console.log(Name)
 
 // block scope with const
-{
-    const Name = "Hamid"
-}
-console.log(Name)
+// {
+//     const Name = "Hamid"
+// }
+// console.log(Name)
+
+// temporal dead zone 
+// temporal dead zone didn't occur with var keyword but with let and const 
+
+// with var 
+// console.log(age)
+// console.log("Hi this is deadzone")
+// console.log("Hi this is deadzone")
+// var age = 35;
+// console.log(age)
+
+// with let and const but here is dead zone 
+
+// console.log(age)
+// console.log("Hi this is deadzone")
+// console.log("Hi this is deadzone")
+// // let age = 35;
+// const age = 35;
+// console.log(age)
+
