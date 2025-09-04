@@ -43,8 +43,24 @@
 
 
 // default parameter
-function sayName(name="Latif"){
-    console.log(name)
-}
-sayName()
+// function sayName(fName="Latif", lName="khan"){
+//     console.log(fName, lName)
+// }
+// sayName("Hamid")
+// sayName("Hamid", "Khan")
+// sayName()
 
+// parameter dependent
+// function sayName(fName="Latif", lName=fName.toUpperCase()){
+//     console.log(fName, lName)
+// }
+// sayName();
+
+
+//object as default parameter
+function sayName(name="Majid", desc={age:29,wt:80}){
+    console.log("Hello",name + " how are you", desc)
+}
+sayName("Hamid",{age:35, wt: 70})
+// sayName("Hamid")
+sayName()
