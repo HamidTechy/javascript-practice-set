@@ -58,9 +58,31 @@
 
 
 //object as default parameter
-function sayName(name="Majid", desc={age:29,wt:80}){
-    console.log("Hello",name + " how are you", desc)
-}
-sayName("Hamid",{age:35, wt: 70})
-// sayName("Hamid")
-sayName()
+// function sayName(name="Majid", desc={age:29,wt:80}){
+//     console.log("Hello",name + " how are you", desc)
+// }
+// sayName("Hamid",{age:35, wt: 70})
+// // sayName("Hamid")
+// sayName()
+
+// array as default parameter
+
+// function sayName(name="Latif", desc=["Amir","Abid","Sajid","Majid","Hamid"]){
+//     console.log("Hello",name + " Your sons names are", desc)
+// }
+// sayName("Parween",)
+// sayName()
+
+// null and undefined as default parameter 
+//null
+// function sayName(name="Latif"){
+//     console.log("Hello",name)
+// }
+// sayName(null);
+
+//undefined
+
+// function sayName(name="Latif"){
+//     console.log("Hello",name)
+// }
+// sayName(undefined);
