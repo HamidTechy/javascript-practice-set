@@ -86,3 +86,15 @@
 //     console.log("Hello",name)
 // }
 // sayName(undefined);
+
+//function as default parameter
+
+// function getAge(){
+//     return 80;
+// }
+
+// function sayName(name="Hamid", age=getAge()){
+//     console.log(name, " ", age)
+// }
+
+// sayName()
