@@ -15,3 +15,5 @@ console.log(Math.abs(-8))
 console.log(Math.random()*99)
 
 console.log(Math.sqrt(9))
+
+console.log(Math.pow(2, 3))
