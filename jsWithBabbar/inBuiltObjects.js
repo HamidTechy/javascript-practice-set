@@ -16,4 +16,12 @@ console.log(Math.random()*99)
 
 console.log(Math.sqrt(9))
 
-console.log(Math.pow(2, 3))
+console.log(Math.pow(2, 4))
+
+// date
+let curr = new Date()
+
+let DOB = new Date('March 01 1997')
+console.log(curr)
+// console.log(new Date())
+console.log(DOB)
