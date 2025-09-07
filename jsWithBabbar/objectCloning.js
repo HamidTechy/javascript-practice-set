@@ -47,18 +47,19 @@
 //cloning with iteration
 
 
-let src = {
-    age : 28,
-    wt: 80,
-    ht: 5.9
-}
+// let src = {
+//     age : 28,
+//     wt: 80,
+//     ht: 5.9
+// }
 
-let dest = {};
-for(let key in src){
-    let newKey = key;
-    let newValue = src[key];
-    dest[newKey] = newValue;
-} 
-src.ht = 6;
-console.log(src)
-console.log(dest)
+// let dest = {};
+// for(let key in src){
+//     let newKey = key;
+//     let newValue = src[key];
+//     dest[newKey] = newValue;
+// } 
+// src.ht = 6;
+// console.log(src)
+// console.log(dest)
+
