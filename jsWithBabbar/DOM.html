@@ -34,7 +34,24 @@
         </span>
         <p>This is my Second Para</p>
     </div> -->
-    
+    <div>
+        Hello World
+        <div class="myDiv">
+            <p>First</p>
+            <h1>Second</h1>
+            <p>Third</p>
+        </div>
+    </div>
+
+    <script>
+        let myDiv = document.querySelector('.myDiv');
+        let myElement = document.createElement("h2")
+        myElement.textContent = "Second Heading";
+        // myDiv.insertAdjacentElement("beforebegin", myElement);
+        // myDiv.insertAdjacentElement("afterbegin", myElement);
+        // myDiv.insertAdjacentElement("beforeend", myElement);
+        myDiv.insertAdjacentElement("afterend", myElement);
+    </script>
 
 </body>
 </html>
