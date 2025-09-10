@@ -8,12 +8,25 @@
 <body>
     <div id="paragraph"> Paragraph
     <p id="fpara" class="textMatter">First Paragraph</p>
-    <p id="spara" class="textMatter">Second Paragraph</p>
+                    <p id="spara" class="textMatter">Second Paragraph</p>
     <p id="tpara" class="textMatter">Third Paragraph</p>
-    <p id="fopara" class="textMatter">Forth Paragraph</p>
-    <button>Submit</button>
+    <p id="fopara" class="textMatter" style="display: none;">Forth Paragraph</p>
+    <button>
+        <P>inside button</P>
+    </button>
     </div>
 
     <h1 id="fheading" class="textMatter">First Heading</h1>
+
+
+    <script>
+        let contain = document.getElementById("paragraph")
+        console.log(contain.innerHTML)
+        console.log(contain.outerHTML)
+        console.log(contain.innerText)
+        console.log(contain.textContent)
+
+        
+    </script>
 </body>
 </html>
