@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even & Listeneers</title>
+</head>
+<body>
+    <div>
+        <p id="fpara">This is Paragraph</p>
+    </div>
+    <script>
+        function changeParagraph(){
+            let change = document.getElementById("fpara");
+            change.textContent = "This is eventlistener"            
+        }
+        let change = document.getElementById("fpara");
+        change.addEventListener('click', changeParagraph);
+    </script>
+</body>
+</html>
