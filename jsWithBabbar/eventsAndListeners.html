@@ -10,12 +10,16 @@
         <p id="fpara">This is Paragraph</p>
     </div>
     <script>
+        
+
         function changeParagraph(){
-            let change = document.getElementById("fpara");
-            change.textContent = "This is eventlistener"            
+        let fpara = document.getElementById('fpara')
+        fpara.textContent = "This is EventListener";
+        
         }
-        let change = document.getElementById("fpara");
-        change.addEventListener('click', changeParagraph);
+        let fpara = document.getElementById('fpara')
+        fpara.addEventListener('click', changeParagraph)
+
     </script>
 </body>
 </html>
