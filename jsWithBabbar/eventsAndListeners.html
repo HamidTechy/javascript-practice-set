@@ -11,14 +11,17 @@
     </div>
     <script>
         
-
         function changeParagraph(){
         let fpara = document.getElementById('fpara')
         fpara.textContent = "This is EventListener";
         
         }
+        
         let fpara = document.getElementById('fpara')
         fpara.addEventListener('click', changeParagraph)
+        
+
+        // fpara.removeEventListener('click', changeParagraph);
 
     </script>
 </body>
