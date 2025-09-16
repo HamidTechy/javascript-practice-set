@@ -11,7 +11,8 @@
     </div>
     <script>
         
-        function changeParagraph(){
+        function changeParagraph(event){
+        console.log(event)
         let fpara = document.getElementById('fpara')
         fpara.textContent = "This is EventListener";
         
