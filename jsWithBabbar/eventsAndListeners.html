@@ -6,9 +6,16 @@
     <title>Even & Listeneers</title>
 </head>
 <body>
-    <div>
+    <!-- <div>
         <p id="fpara">This is Paragraph</p>
         <a id="anchor" href="https://www.youtube.com">Click here</a>
+    </div> -->
+
+    <div id="wrapper">
+        <p id="fpara">First Para</p>
+        <p id="spara">Second Para</p>
+        <p id="tpara">Third Para</p>
+        <p id="fopara">Forth Para</p>
     </div>
     <script>
         
@@ -25,12 +32,19 @@
 
         // fpara.removeEventListener('click', changeParagraph);
 
-        let anchorElement = document.getElementById('anchor');
-        anchorElement.addEventListener('click', function(event){
-            event.preventDefault()
-            anchor.textContent = "Stopped Default Action"
-        })
+        // let anchorElement = document.getElementById('anchor');
+        // anchorElement.addEventListener('click', function(event){
+        //     event.preventDefault()
+        //     anchor.textContent = "Stopped Default Action"
+        // })
 
+        let paras = document.querySelectorAll('p')
+        for(let i=0; i<paras.length; i++){
+            let para = paras[i];
+            para.addEventListener('click', function(){
+                alert("this is Paragraph number " + (i+1))
+            })
+        }
 
     </script>
 </body>
