@@ -8,21 +8,29 @@
 <body>
     <div>
         <p id="fpara">This is Paragraph</p>
+        <a id="anchor" href="https://www.youtube.com">Click here</a>
     </div>
     <script>
         
-        function changeParagraph(event){
-        console.log(event)
-        let fpara = document.getElementById('fpara')
-        fpara.textContent = "This is EventListener";
+        // function changeParagraph(event){
+        // console.log(event)
+        // let fpara = document.getElementById('fpara')
+        // fpara.textContent = "This is EventListener";
         
-        }
+        // }
         
-        let fpara = document.getElementById('fpara')
-        fpara.addEventListener('click', changeParagraph)
+        // let fpara = document.getElementById('fpara')
+        // fpara.addEventListener('click', changeParagraph)
         
 
         // fpara.removeEventListener('click', changeParagraph);
+
+        let anchorElement = document.getElementById('anchor');
+        anchorElement.addEventListener('click', function(event){
+            event.preventDefault()
+            anchor.textContent = "Stopped Default Action"
+        })
+
 
     </script>
 </body>
