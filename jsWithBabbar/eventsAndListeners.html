@@ -12,10 +12,10 @@
     </div> -->
 
     <div id="wrapper">
-        <p id="fpara">First Para</p>
-        <p id="spara">Second Para</p>
-        <p id="tpara">Third Para</p>
-        <p id="fopara">Forth Para</p>
+        <p id="fpara">First <span>first Span</span> Para</p>
+        <p id="spara">Second <span>second Span</span> Para</p>
+        <p id="tpara">Third <span>third Span</span> Para</p>
+        <p id="fopara">Forth <span>forth Span</span> Para</p>
     </div>
     <script>
         
@@ -47,7 +47,10 @@
         // }
         
         function alertPara(event){
-            alert("You have Clicked On " + event.target.textContent)
+            if(event.target.nodeName === 'SPAN'){
+                alert("You have Clicked On " + event.target.textContent)
+            }
+            
         }
         let MyDiv = document.getElementById('wrapper')
         document.addEventListener('click', alertPara)
