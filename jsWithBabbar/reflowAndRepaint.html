@@ -8,29 +8,42 @@
 <body>
     
     <script>
-        let t1 = performance.now()
-        for(let i=1; i<100; i++){
-            let para = document.createElement('p')
-            para.textContent = 'This is para number: ' +i
-            document.body.append(para)
-}
-        let t2 = performance.now()
-        console.log(t2-t1)
+//         let t1 = performance.now()
+//         for(let i=1; i<100; i++){
+//             let para = document.createElement('p')
+//             para.textContent = 'This is para number: ' +i
+//             document.body.append(para)
+// }
+//         let t2 = performance.now()
+//         console.log(t2-t1)
 
-        // code number 2
+//         // code number 2
 
-        const t3 = performance.now()
-        let myDiv = document.createElement('div')
+//         const t3 = performance.now()
+//         let myDiv = document.createElement('div')
 
-        for(let i=1; i<100; i++){
-            let para = document.createElement('p')
-            para.textContent = "This is para number " + i;
-            myDiv.appendChild(para); 
-        }
-        document.body.appendChild(myDiv);
-        const t4 = performance.now();
+//         for(let i=1; i<100; i++){
+//             let para = document.createElement('p')
+//             para.textContent = "This is para number " + i;
+//             myDiv.appendChild(para); 
+//         }
+//         document.body.appendChild(myDiv);
+//         const t4 = performance.now();
 
-        console.log(t4-t3)
+//         console.log(t4-t3)
+
+        // Best Code 
+        let fragment = document.createDocumentFragment();
+
+    for(let i=1; i<100; i++){
+        let para = document.createElement('p')
+        para.textContent = "this is para number" + i;
+        //No reflow and no repaint for this line
+        fragment.appendChild(para);
+    }
+    // this below line take 1 reflow and 1 repaint
+    document.body.appendChild(fragment)
+
     </script>
 </body>
 </html> 
