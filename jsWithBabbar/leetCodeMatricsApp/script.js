@@ -42,7 +42,8 @@ document.addEventListener("DOMContentLoaded", function(){
             statsContainer.innerHTML = `<p>No Data Found </p>`
         }
         finally{
-
+            searchButton.textContent = "Search";
+            searchButton.disabled = false;
         }
 
     }
