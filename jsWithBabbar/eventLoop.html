@@ -8,17 +8,27 @@
 <body>
     <script>
         // sync code 
-        console.log("Step 1");
-        console.log("Step 2");
-        console.log("Step 3");
+        // console.log("Step 1");
+        // console.log("Step 2");
+        // console.log("Step 3");
         // Async code 
-        console.log("Step 1");
+        // console.log("Step 1");
 
-        setTimeout(() => {
-        console.log("Step 2 (done later)");
-        }, 2000);
+        // setTimeout(() => {
+        // console.log("Step 2 (done later)");
+        // }, 2000);
 
-        console.log("Step 3");
+        // console.log("Step 3");
+
+        console.log("Start");
+
+        // A blocking task (takes long time)
+        for (let i = 0; i < 1000; i++) {
+            console.log(i)
+        }
+
+        console.log("End");
+
 
     </script>
 </body>
