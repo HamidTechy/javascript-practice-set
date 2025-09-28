@@ -7,13 +7,27 @@
 </head>
 <body>
     <script>
-        let firstpromise = new Promise((resolve, reject)=>{
-            setTimeout(function syMyName(){
-            console.log("Hamid Rana")
-        }, 5000)
-        })
+        // let firstpromise = new Promise((resolve, reject)=>{
+        //     setTimeout(function syMyName(){
+        //     console.log("Hamid Rana")
+        // }, 5000)
+        // resolve(2);
+        // })
 
-        
+        let promise1 = new Promise((resolve, reject)=>{
+            let success = false;
+            if(success){
+                resolve("Promis is Fullfiled")
+            }
+            else{
+                reject("Promise if Rejected")
+            }
+        })
+        promise1.then((errorCatch)=>{
+            console.log("The Message of promise is "+errorCatch)
+        }).catch((error)=>{
+            console.log("The error Message is "+ error)
+        })
         
     </script>
 </body>
