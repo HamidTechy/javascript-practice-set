@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(){
             console.log("Loggin Data", data);
         }
         catch(error){
-
+            statsContainer.innerHTML = `<p>No Data Found </p>`
         }
         finally{
 
