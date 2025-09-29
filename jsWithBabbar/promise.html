@@ -15,7 +15,7 @@
         // })
 
         let promise1 = new Promise((resolve, reject)=>{
-            let success = false;
+            let success = true;
             if(success){
                 resolve("Promis is Fullfiled")
             }
@@ -23,12 +23,21 @@
                 reject("Promise if Rejected")
             }
         })
-        promise1.then((errorCatch)=>{
-            console.log("The Message of promise is "+errorCatch)
-        }).catch((error)=>{
-            console.log("The error Message is "+ error)
+        // promise1.then((errorCatch)=>{
+        //     console.log("The Message of promise is "+errorCatch)
+        // }).catch((error)=>{
+        //     console.log("The error Message is "+ error)
+        // })
+        promise1.then((message)=>{
+            console.log("First Message "+ message)
+            return " return of first message"
+        }).then((message)=>{
+            console.log("Second Message "+ message)
+            return " return of second message"
         })
-        
+        .then((message)=>{
+            console.log("Third Message "+ message)
+        })
     </script>
 </body>
 </html>
