@@ -15,7 +15,7 @@
         // })
 
         let promise1 = new Promise((resolve, reject)=>{
-            let success = true;
+            let success = false;
             if(success){
                 resolve("Promis is Fullfiled")
             }
@@ -37,6 +37,10 @@
         })
         .then((message)=>{
             console.log("Third Message "+ message)
+        }).catch((error)=>{
+            console.log(error)
+        }).finally((message)=>{
+            console.log("finally alwasys work no matter state is fullfiled or rejected")
         })
     </script>
 </body>
