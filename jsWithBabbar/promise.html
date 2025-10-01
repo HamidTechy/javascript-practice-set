@@ -14,33 +14,48 @@
         // resolve(2);
         // })
 
-        let promise1 = new Promise((resolve, reject)=>{
-            let success = false;
-            if(success){
-                resolve("Promis is Fullfiled")
-            }
-            else{
-                reject("Promise if Rejected")
-            }
-        })
+        // let promise1 = new Promise((resolve, reject)=>{
+        //     let success = false;
+        //     if(success){
+        //         resolve("Promis is Fullfiled")
+        //     }
+        //     else{
+        //         reject("Promise if Rejected")
+        //     }
+        // })
         // promise1.then((errorCatch)=>{
         //     console.log("The Message of promise is "+errorCatch)
         // }).catch((error)=>{
         //     console.log("The error Message is "+ error)
         // })
-        promise1.then((message)=>{
-            console.log("First Message "+ message)
-            return " return of first message"
-        }).then((message)=>{
-            console.log("Second Message "+ message)
-            return " return of second message"
+        // promise1.then((message)=>{
+        //     console.log("First Message "+ message)
+        //     return " return of first message"
+        // }).then((message)=>{
+        //     console.log("Second Message "+ message)
+        //     return " return of second message"
+        // })
+        // .then((message)=>{
+        //     console.log("Third Message "+ message)
+        // }).catch((error)=>{
+        //     console.log(error)
+        // }).finally((message)=>{
+        //     console.log("finally alwasys work no matter state is fullfiled or rejected")
+        // })
+
+        // Multiple promises
+        let promise1 = new Promise((resolve, reject)=>{
+            setTimeout(resolve, 1000, "First")
         })
-        .then((message)=>{
-            console.log("Third Message "+ message)
-        }).catch((error)=>{
-            console.log(error)
-        }).finally((message)=>{
-            console.log("finally alwasys work no matter state is fullfiled or rejected")
+        let promise2 = new Promise((resolve, reject)=>{
+            setTimeout(resolve, 2000, "Second")
+        })
+        let promise3 = new Promise((resolve, reject)=>{
+            setTimeout(resolve, 3000, "Third")
+        })
+        Promise.all([promise1, promise2, promise3])
+        .then((values)=>{
+            console.log(values)
         })
     </script>
 </body>
