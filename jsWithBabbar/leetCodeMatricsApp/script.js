@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function(){
     async function fetchUserDetails(username){
         const url = `http://leetcode-stats-api.herokuapp.com/${username}`
         try{
+            searchButton.textContent = "Searching...";
+            searchButton.disabled = true;
             const response = await fetch(url);
             if(!response.ok){
                 throw new Error("Unable to fetch User Details");
@@ -40,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
         }
         finally{
-            
+
         }
 
     }
