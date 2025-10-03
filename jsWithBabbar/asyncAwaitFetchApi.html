@@ -7,13 +7,25 @@
 </head>
 <body>
     <script>
-        function getData(){
-            setTimeout(function(){
-                console.log("I am inside setTimeout Block")
-            }, 2000);
-        }
+        //     async function getData(){
+        //     setTimeout(function(){
+        //         console.log("I am inside setTimeout Block")
+        //     }, 2000);
+        // }
 
+        // let output = getData()
+
+
+        // fetech API
+        async function getData(){
+            let response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+            let data = await response.json();
+            console.log(data)
+        }
         getData()
+        
+
+
     </script>
 </body>
 </html>
