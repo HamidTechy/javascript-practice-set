@@ -17,15 +17,48 @@
 
 
         // fetech API
-        async function getData(){
-            let response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-            let data = await response.json();
-            console.log(data)
-        }
-        getData()
+        // async function getData(){
+        //     // let response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+        //     // let response = await fetch('https://jsonplaceholder.typicode.com/posts')
+        //     let response = await fetch('https://jsonplaceholder.typicode.com/comments?postId=1')
+        //     let data = await response.json();
+        //     console.log(data)
+        // }
+        // getData()
         
+        
+            const myheader = new Headers()
+            myheader.append("Content-Type", "application/json")
+            const data = {
+                name : "Hamid",
+                email : "ranahamid728@gmail.com",
+                ago : 28
+            };
+            const url = "https://jsonplaceholder.typicode.com/posts"
+            const process = {
+                "method" : "POST",
+                "header" : myheader,
+                "body": JSON.stringify(data)
+            }
 
+            async function getData(){
+                let response = await fetch('https://jsonplaceholder.typicode.com/posts')
+                let data = await response.json();
+                console.log(data)
+            }
 
+            async function sendUserData(){
+                const response1 = await fetch(url, process)
+                const response2 = await response1.json()
+                console.log("My Data", response2)
+            }
+        
+            async function processData(){
+                await sendUserData()
+                await getData()
+            }
+
+            processData()
     </script>
 </body>
 </html>
