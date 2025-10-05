@@ -7,13 +7,14 @@
 </head>
 <body>
     <script>
+        let name = "majid"
         function outer(){
-            let name = "Hamid"
+            // let name = "Hamid"
             function inner(){
-                let name = "Latif"
+                // let name = "Latif"
                 console.log(name)
             }
-            return inner()
+            inner()
         }
         outer()
     </script>
