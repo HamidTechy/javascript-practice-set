@@ -7,16 +7,16 @@
 </head>
 <body>
     <script>
-        let name = "majid"
-        function outer(){
-            // let name = "Hamid"
-            function inner(){
-                // let name = "Latif"
+        function outerfunction(){
+            let name = "Hamid"
+            function innerfunction(){
+                let name = "Latif" 
                 console.log(name)
             }
-            inner()
+            return innerfunction;
         }
-        outer()
+        let inner = outerfunction()
+        inner()
     </script>
 </body>
 </html>
