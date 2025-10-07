@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(62, 60, 63);
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+
+}
+.container{
+    width: 80%;
+    max-width: 600px;
+    background-color: rgb(114, 102, 102);
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+h1{
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+#countdown{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+#countdown div{
+    padding: 30px;
+    background-color: rgb(182, 185, 187);
+    margin: 1rem; 
+    border-radius: 5px;
+    color: black;
+    font-size: xx-large;
+}
