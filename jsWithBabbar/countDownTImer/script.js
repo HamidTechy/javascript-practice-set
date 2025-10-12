@@ -7,10 +7,14 @@ function updateTimer(){
     const distanceCovered = now - startDate;
     const distancePending = endDate - now;
 
-    const days = Math.floor(distancePending/(24*60*60*1000));
-    const hrs = Math.floor((distancePending%(24*60*60*1000))/(60*60*1000));
-    const mins = Math.floor((distancePending%(60*60*1000))/(60*1000));
-    const secs = Math.floor((distancePending%(60*1000))/(1000));
+    const oneDayInMillis = (24*60*60*1000);
+    const oneHourInMillis = (60*60*1000)
+    const oneMinInMillis = (60*1000)
+    const oneSecondInMillis = (1000)
+    const days = Math.floor(distancePending/oneDayInMillis);
+    const hrs = Math.floor((distancePending%(oneDayInMillis))/oneHourInMillis);
+    const mins = Math.floor((distancePending%(oneHourInMillis))/oneMinInMillis);
+    const secs = Math.floor((distancePending%(oneMinInMillis))/oneSecondInMillis)    ;
 
     document.getElementById("days").innerHTML = days;
     document.getElementById("hours").innerHTML = hrs;
