@@ -1,4 +1,4 @@
-const endDate = new Date('15 nov, 2025 20:00:00').getTime()
+const endDate = new Date('1 nov, 2025 20:00:00').getTime()
 const startDate = new Date().getTime()
 
 
@@ -20,6 +20,11 @@ function updateTimer(){
     document.getElementById("hours").innerHTML = hrs;
     document.getElementById("minutes").innerHTML = mins;
     document.getElementById("seconds").innerHTML = secs;
+
+    // calculate width percentage for progress bar
+    const totalDistance = endDate - startDate;
+    const percentageDistance = (distanceCovered/totalDistance)*100;
+    document.getElementById("progress-bar").style.width = percentageDistance + "%"
 }
 
 setInterval(updateTimer, 1000);
