@@ -4,5 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const usernameInput = document.getElementById("user-input");
     const statsContainer = document.querySelector(".stats-container");
     const easyProgressCircle = document.querySelector(".easy-progress")
+    const mediumProgressCircle = document.querySelector(".medium-progress")
+    const hardProgressCircle = document.querySelector(".hard-progress")
 
 })
