@@ -54,8 +54,12 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-    columns: white;
+    font-size: 1rem;
+    color: white;
     font-weight: 700;
-    background-color: #11301e;
+    background: conic-gradient(#299f5d var(--progress-degree, 0%), #283a2e 0%);
+}
+.circle span{
+    position: relative;
+    z-index: 2;
 }
