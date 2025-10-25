@@ -6,5 +6,8 @@ document.addEventListener("DOMContentLoaded", function(){
     const easyProgressCircle = document.querySelector(".easy-progress")
     const mediumProgressCircle = document.querySelector(".medium-progress")
     const hardProgressCircle = document.querySelector(".hard-progress")
+    const easyLabel = document.getElementById("easy-label")
+    const mediumLabel = document.getElementById("medium-label")
+    const hardLabel = document.getElementById("hard-label")
 
 })
