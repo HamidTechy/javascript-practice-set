@@ -9,5 +9,12 @@ document.addEventListener("DOMContentLoaded", function(){
     const easyLabel = document.getElementById("easy-label")
     const mediumLabel = document.getElementById("medium-label")
     const hardLabel = document.getElementById("hard-label")
+    const cardStatsConatiner = document.querySelector(".stats-cards")
+
+
+    searchButton.addEventListener('click', function(){
+        const username = usernameInput.value;
+        console.log("login username: ", username)
+    })
 
 })
