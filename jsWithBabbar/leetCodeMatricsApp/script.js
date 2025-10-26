@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     async function fetchUserDetails(username){
-        const url = 
+        const url = `http://leetcode-stats-api.herokuapp.com/${username}`
 
     }
 
