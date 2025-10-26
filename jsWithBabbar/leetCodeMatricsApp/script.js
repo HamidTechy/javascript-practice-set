@@ -1,3 +1,5 @@
+const { use } = require("react");
+
 document.addEventListener("DOMContentLoaded", function(){
 
     const searchButton = document.getElementById("search-btn");
@@ -12,10 +14,16 @@ document.addEventListener("DOMContentLoaded", function(){
     const cardStatsConatiner = document.querySelector(".stats-cards")
     // return regex based on true or false 
     function validateUsername(username){
-        if(username.trim()"==="){
+        if(username.trim()===""){
             alert("UserName Should Not be Emplty!")
             return 0;
         }
+        const regex = /^[a-zA-Z0-9_-]{1, 15}$/;
+        const isMatching = regex.text(username);
+        if(!isMatching){
+            alert("Invalid username")
+        }
+        return isMatching;
     }
 
     searchButton.addEventListener('click', function(){
