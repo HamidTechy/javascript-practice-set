@@ -26,9 +26,17 @@ document.addEventListener("DOMContentLoaded", function(){
         return isMatching;
     }
 
+    async function fetchUserDetails(username){
+        const url = 
+
+    }
+
     searchButton.addEventListener('click', function(){
         const username = usernameInput.value;
-        console.log("login username: ", username)
+        console.log("login username: ", username);
+        if(validateUsername(username)){
+         fetchUserDetails(username);
+        }
     })
 
 })
