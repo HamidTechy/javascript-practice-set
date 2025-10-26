@@ -28,6 +28,20 @@ document.addEventListener("DOMContentLoaded", function(){
 
     async function fetchUserDetails(username){
         const url = `http://leetcode-stats-api.herokuapp.com/${username}`
+        try{
+            const response = await fetch(url);
+            if(!response.ok){
+                throw new Error("Unable to fetch User Details");
+            }
+            const date = await response.json();
+            console.log("Loggin Data", data);
+        }
+        catch(error){
+
+        }
+        finally{
+            
+        }
 
     }
 
